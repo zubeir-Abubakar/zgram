@@ -8,13 +8,13 @@ class ProfileForm(forms.ModelForm):
         exclude=['owner']
 
 
-class Imag eForm(forms.ModelForm):
+class ImageForm(forms.ModelForm):
     class Meta:
         model = Image
         exclude =['likes','profile']
 
 
-class CommentForm(forms.ModelForm):
+class CommentFo rm(forms.ModelForm):
     class Meta:
         model = Comment
         exclude = ['image', 'comment_owner']
