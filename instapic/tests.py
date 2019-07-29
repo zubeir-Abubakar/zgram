@@ -54,7 +54,7 @@ class ImageTestClass(TestCase):
 
 
 
-class CommentTestClass(TestCase):
+class CommentTest Class(TestCase):
 
     """Test class for Comment Model"""
 
