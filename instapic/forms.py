@@ -1,5 +1,5 @@
 from django import forms
-from .models import Pro file,Image,Comment
+from .models import Profile,Image,Comment
 
 
 class ProfileForm(forms.ModelForm):
