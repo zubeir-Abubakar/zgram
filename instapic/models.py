@@ -48,7 +48,7 @@ class Image(models.Model):
     def __str__(self):
         return str(self.name)
 
-    def save_im age(self):
+    def save_image(self):
         self.save()
 
     def delete_image(self):
@@ -80,6 +80,6 @@ class Comment(models.Model):
 
 
 
-class Likes(models.Model):
+class Likes (models.Model):
     liker=models.ForeignKey(User)
     image =models.ForeignKey(Image)
