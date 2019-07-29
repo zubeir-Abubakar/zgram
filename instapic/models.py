@@ -28,7 +28,7 @@ class Profile(models.Model):
         return profile
 
     @classmethod
-    def get_profile_by_user name(cls, owner):
+    def get_profile_by_username(cls, owner):
         profiles = cls.objects.filter(owner__contains=owner)
         return profiles
 
@@ -36,7 +36,7 @@ class Profile(models.Model):
 
 
 
-class Image(models.Model):
+class Im age(models.Model):
     pic=ImageField(manual_crop='1080x800', blank=True)
     name= models.CharField(max_length=55)
     caption = models.TextField(blank=True)
