@@ -23,12 +23,12 @@ class Profile(models.Model):
         self.delete()
 
     @classmethod
-    def get_by _id(cls, id):
+    def get_by_id(cls, id):
         profile = Profile.objects.get(owner=id)
         return profile
 
     @classmethod
-    def get_profile_by_username(cls, owner):
+    def get_profile_by_user name(cls, owner):
         profiles = cls.objects.filter(owner__contains=owner)
         return profiles
 
