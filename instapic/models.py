@@ -19,11 +19,11 @@ class Profile(models.Model):
     def profile_save(self):
         self.save()
 
-    def delete_p rofile(self):
+    def delete_profile(self):
         self.delete()
 
     @classmethod
-    def get_by_id(cls, id):
+    def get_by _id(cls, id):
         profile = Profile.objects.get(owner=id)
         return profile
 
