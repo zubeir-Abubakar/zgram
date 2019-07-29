@@ -16,10 +16,10 @@ class Profile(models.Model):
         return str(self.bio)
 
 
-    def profile_sa ve(self):
+    def profile_save(self):
         self.save()
 
-    def delete_profile(self):
+    def delete_p rofile(self):
         self.delete()
 
     @classmethod
