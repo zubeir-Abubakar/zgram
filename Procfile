@@ -1,1 +1,1 @@
-web: gunicorn in sta.wsgi
+web: gunicorn in insta.wsgi

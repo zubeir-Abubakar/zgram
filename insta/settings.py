@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'instapic',
     'pyuploadcare.dj',
     'bootstrap3',
-    'bootstrap4 
+    'bootstrap4',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
