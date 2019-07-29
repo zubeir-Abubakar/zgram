@@ -74,5 +74,5 @@ Like functionality not well implemented and some functionalities notyet well imp
     - Virtual studio code
 
 ## Support and contact details
-Contact me for further help/support
+Contact me for further help/support through +254743046778
 
