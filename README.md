@@ -63,12 +63,12 @@ python3.6 manage.py runserver
 Open terminal on `localhost:http://127.0.0.1:8000/`
 
 ## Known bugs
-Like functionality not well implemented
+Like functionality not well implemented and some functionalities notyet well implimented 
 
 ## Technologies used
     - Python 3.6
     - HTML
-    - Bootstrap 4
+    - Bootstrap 4,3
     - Heroku
     - Postgresql
     - Virtual studio code
