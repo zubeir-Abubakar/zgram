@@ -36,8 +36,8 @@ class Profile(models.Model):
 
 
 
-class Im age(models.Model):
-    pic=ImageField(manual_crop='1080x800', blank=True)
+class Image(models.Model):
+    pic=ImageField(manual_crop='180x800', blank=True)
     name= models.CharField(max_length=55)
     caption = models.TextField(blank=True)
     profile= models.ForeignKey(User, blank=True,on_delete=models.CASCADE)
