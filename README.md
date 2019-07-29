@@ -63,7 +63,7 @@ python3.6 manage.py runserver
 Open terminal on `localhost:http://127.0.0.1:8000/`
 
 ## Known bugs
-Like functionality not well implemented and some functionalities notyet well implimented 
+Like functionality not well implemented and some functionalities not yet well implimented 
 
 ## Technologies used
     - Python 3.6
