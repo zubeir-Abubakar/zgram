@@ -1,0 +1,42 @@
+<style>
+.row{
+    background: ali;
+}
+
+</style>
+{% extends 'registration/base.html' %}
+{% load bootstrap4 %}
+
+{% block content %}
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<div class="container">
+    <div class="w3-panel w3-white w3-card-4">
+        <div class="col-md-8">
+            <img src="https://res.cloudinary.com/keenltd/image/fetch/f_auto,q_auto/https://www.keen.com.mt/wp-content/uploads/2018/07/Keen_IGTV_Blog_CS_Rev1-1200x900.jpg"
+                class="w3-round" alt="logo" height="402" width="650" Align="left">
+        </div>
+        <div class="row sign-up">
+            <div class="col-md-4">
+                {% if form.errors %}
+                <p class="small">Password or Username is incorrect</p>
+                {% endif %}
+                <div class="section">
+                    <div class="form-section">
+                        <form action="/accounts/login/" method="POST">
+                            {% csrf_token %}
+                            {% bootstrap_form form %}
+                            <div class="form-group">
+                                <input type="submit" class="btn btn-primary btn-lg" value="Sign In">
+                            </div>
+                            <input type="hidden" name="next" value="{{next}}">
+                        </form>
+                    </div>
+                </div>
+                <div class="section">
+                    <p>Don't have an account? <a href="/accounts/register" style="color:rgb(100, 189, 145);">Sign-Up</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

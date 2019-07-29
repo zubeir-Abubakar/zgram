@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container ">
+    <div class="row">
+        {% if results %}
+        {% for result in results %}
+        <div class="row"
+            style="overflow:hidden;-webkit-border-radius:50px; -moz-border-radius:50px; border-radius:100px; width:90px;height:100px;">
+            {% if result.profile_pic %}
+            <img src="{{result.profile_pic.cdn_url}}" alt="image">
+            {% else %}
+            <img src="/static/img/avi.jpeg" alt="avatar">
+            {% endif %}
+        </div>
+        <br>
+        <ul style="list-style: none">
+            <li style="list-style: none"><a class="btn btn-primary" href="">View Profile</a></li>
+            <li class="owner">{{result.profile.owner}} </li>
+
+        </ul>
+        {% endfor %}
+        {% else %}
+        <div class="col-md-12 text-center">
+            <h4 class="font1">Unavailable/Not found </h4>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,1 @@
+web: gunicorn in sta.wsgi
