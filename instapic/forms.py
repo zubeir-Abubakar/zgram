@@ -1,8 +1,8 @@
 from django import forms
-from .models import Profile,Image,
+from .models import Profile,Image,Comment
 
 
-class ProfileForm(forms.ModelForm):
+class Pro fileForm(forms.ModelForm):
     class Meta:
         model = Profile
         exclude=['owner']
