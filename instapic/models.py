@@ -9,14 +9,14 @@ from friendship.models import Friend,Follow,Block
 
 class Profile(models.Model):
     profile_pic =ImageField( blank=True)
-    bio = models.Cha rField(max_length=255)
+    bio = models.CharField(max_length=255)
     owner = models.OneToOneField(User,blank=True, on_delete=models.CASCADE, related_name="profile")
 
     def __str__(self):
         return str(self.bio)
 
 
-    def profile_save(self):
+    def profile_sa ve(self):
         self.save()
 
     def delete_profile(self):
