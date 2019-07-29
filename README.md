@@ -76,5 +76,3 @@ Like functionality not well implemented and some functionalities notyet well imp
 ## Support and contact details
 Contact me for further help/support
 
-### License
-Copyright (c) **Zubeyr Abubakar**
