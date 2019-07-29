@@ -7,7 +7,7 @@ from friendship.models import Friend,Follow,Block
 
 
 
-class Profile(models.Model):
+class Profil e(models.Model):
     profile_pic =ImageField( blank=True)
     bio = models.CharField(max_length=255)
     owner = models.OneToOneField(User,blank=True, on_delete=models.CASCADE, related_name="profile")
